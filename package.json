@@ -1,0 +1,77 @@
+{
+  "name": "imageai",
+  "version": "2.1.0",
+  "description": "Generate a hyper-realistic photo an anime style!",
+  "type": "module",
+  "scripts": {
+    "prepare": "microbundle --tsconfig ./tsconfig.json --format cjs,esm,modern --pkg-main --target node --strict --no-sourcemap --compress",
+    "build:all": "microbundle --tsconfig ./tsconfig.json --format cjs,esm,modern --pkg-main --target node --strict --no-sourcemap --compress && typedoc",
+    "build:docs": "typedoc",
+    "build:src": "microbundle --tsconfig ./tsconfig.json --format cjs,esm,modern --pkg-main --target node --strict --no-sourcemap --compress",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.mjs"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.mjs",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrfzvx12/imageai.git"
+  },
+  "keywords": [
+    "ai",
+    "image",
+    "anime"
+  ],
+  "author": "Hidden-Finder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrfzvx12/imageai/issues"
+  },
+  "homepage": "https://github.com/mrfzvx12r/imageai",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "async-retry": "^1.3.3",
+    "axios": "^0.24.0",
+    "https-proxy-agent": "^5.0.1",
+    "socks-proxy-agent": "^7.0.0"
+  },
+  "peerDependencies": {
+    "form-data": "^4.0.0",
+    "jimp": "^0.16.1",
+    "sharp": "^0.30.5"
+  },
+  "peerDependenciesMeta": {
+    "form-data": {
+      "optional": true
+    },
+    "jimp": {
+      "optional": true
+    },
+    "sharp": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/async-retry": "^1.4.5",
+    "@types/node": "^16.0.0",
+    "@types/sharp": "^0.29.4",
+    "form-data": "^4.0.0",
+    "jimp": "^0.16.1",
+    "microbundle": "^0.15.1",
+    "prettier": "^2.8.1",
+    "sharp": "^0.30.5",
+    "typedoc": "^0.22.0",
+    "typedoc-theme-hierarchy": "^1.3.8",
+    "typescript": "^4.0.0"
+  }
+}
