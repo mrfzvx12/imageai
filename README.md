@@ -3,7 +3,7 @@
 Use the edge version
 
 ```
-npm install --save github:Hidden-Finder/imageai
+npm install --save imageai
 ```
 
 **Before use this package, you must install [Jimp](https://www.npmjs.com/package/sharp) or [Sharp](https://www.npmjs.com/package/jimp) to the dependencies**
