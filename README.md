@@ -11,7 +11,8 @@ npm install --save github:mrfzvx12/imageai
 ## Usage
 
 ```js
-const ImageAI = require("imageai);
+// import * as ImageAI from "imageai";
+const ImageAI = require("imageai");
 
 // default with options
 const converter = new ImageAI();
