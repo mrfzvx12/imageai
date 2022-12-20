@@ -11,7 +11,7 @@ npm install --save imageai
 ## Usage
 
 ```js
-import ImageAI from "@hfinder/imageai";
+const ImageAI = require("imageai);
 
 // default with options
 const converter = new ImageAI();
