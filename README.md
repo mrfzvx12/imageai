@@ -33,12 +33,6 @@ const converter = new ImageAI({
   randomize: false,
 });
 
-// image source
-const imgBuf = fs.readFileSync("images.jpeg");
-const imgUrl = "https://hfinder.net/images.jpeg";
-const imgPath = "/path/to/image/images.jpeg";
-const imgBase64 = "UklGRiqXAABXRUJQVlA4WAoAAAAQ...";
-
 // Can be valid: Buffer, url, path, or base64
 const image = imgBuf | imgUrl | imgPath | imgBase64;
 ```
