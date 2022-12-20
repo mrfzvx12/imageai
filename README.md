@@ -3,7 +3,7 @@
 Use the edge version
 
 ```
-npm install --save imageai
+npm install --save github:mrfzvx12/imageai
 ```
 
 **Before use this package, you must install [Jimp](https://www.npmjs.com/package/sharp) or [Sharp](https://www.npmjs.com/package/jimp) to the dependencies**
@@ -48,10 +48,6 @@ const buffer = await converter.ai2d(image);
 // crop the image, "COMPARED" | "SINGLE"
 const buffer = await converter.ai2d(image, "SINGLE");
 ```
-
-> From `December 6` to `December 15` the AI had been available only in `China` or with `Chinese proxies`.
-> Since `December 16` the AI `works` for the rest of the world (UPD: still doesn't work in some countries) again so using proxies is `not needed` anymore, but it's limited and allows you to generate only one type of media.
-> Seems like it's impossible to find `FREE` alive proxies. `Don't waste` your time searching and just buy it `somewhere`.
 
 ### Convert Waifu 2x
 
